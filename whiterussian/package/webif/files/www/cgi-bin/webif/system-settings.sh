@@ -325,7 +325,7 @@ is_bcm947xx && {
 		dangerous_form_start="start_form|@TR<<Dangerous Settings>>"
 		dangerous_form_end="end_form"
 		dangerous_form_help="helpitem|CPU Clock Frequency
-					helptext|HelpText CPU Clock Frequency#Do not change this. You may brick your router if you do not know what you are doing. We've tried to disable it for all routers that can be bricked through an invalid clock frequency setting. Only Linksys WRT54G v4 units are known to be unbrickable by a bad clkfreq setting."
+					helptext|HelpText CPU Clock Frequency#Since it is generally considered unsafe to overclock your router, this option is disabled. However, many routers can be safely overclocked to improve wireless encryption performance, and therefore throughput."
 	}
 }
 
