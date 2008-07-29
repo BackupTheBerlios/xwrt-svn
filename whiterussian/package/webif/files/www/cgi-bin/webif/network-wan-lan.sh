@@ -295,7 +295,7 @@ field|@TR<<Utilize OpenDNS>>
 radio|opendns|$FORM_opendns|1|@TR<<Yes>>
 radio|opendns|$FORM_opendns|0|@TR<<No>>
 helpitem|OpenDNS
-helptext|HelpText OpenDNS#Enabling use of OpenDNS means that instead of your ISP's DNS servers your router will utilize the OpenDNS service for name resolution.
+helptext|HelpText OpenDNS#When enabled, your router's DNS server (Dnsmasq) will utilize the OpenDNS service for name resolution. Note that strict ordering of DNS servers will be turned on in Dnsmasq so that OpenDNS servers will always be tried first in cases where other DNS servers are also available.
 helplink|http://www.opendns.org
 end_form
 
