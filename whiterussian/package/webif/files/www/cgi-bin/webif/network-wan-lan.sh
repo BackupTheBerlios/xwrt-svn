@@ -171,7 +171,11 @@ EOF
 
 		# opendns
 		save_setting opendns opendns_enabled "$FORM_opendns"
-
+		# turn on (or off) strict ordering of nameservers too, else ISP nameservers might get chosen instead
+		# of opendns nameservers. Binding these two options together may not be totally ideal, but I think
+		# its appropriate.
+		save_setting network dhcp_strict_order "$FORM_opendns"
+		
 		# lan settings
 		save_setting network lan_ipaddr $FORM_lan_ipaddr
 		save_setting network lan_netmask $FORM_lan_netmask
